@@ -1,0 +1,427 @@
+@media (min-width: 144px) and (max-width: 480px) {
+    
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        border: 0;
+        box-sizing: border-box;
+        outline: 0;
+        text-decoration: none;
+        font-family: 'Mulish', sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+    .headerLogo{
+        display: none;
+    }
+    
+    :root {
+        --animation-speed: 300ms;
+    }
+    
+    html, body {
+        height: 100%;
+        overflow-x: hidden;
+        background: rgb(29,28,48);
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+    }
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--animation-speed) all;
+        cursor: pointer;
+    }
+    
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        background: rgb(29, 28, 48);
+        border-right: 1px solid #ddd;
+        transform: translateX(-100%);
+        transition: var(--animation-speed) transform;
+    }
+    .navbar ul li {
+        border-bottom: 1px solid #ddd;
+    }
+    .navbar ul li a {
+        display: block;
+        font-size: 20px;
+        letter-spacing: 2px;
+        padding: 15px 20px;
+        color: white;
+    }
+    .navbar ul li a:hover {
+        background-color: white;
+        color: rgb(29, 28, 48);
+        transition: all 1s;
+    }
+    
+    .container {
+        height: 100%;
+        background: linear-gradient(rgb(29,28,48), #4e344a );
+        transition: var(--animation-speed) transform;
+    }
+    .container .header {
+        height: 100px;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(rgb(29,28,48));
+        padding: 0 20px;
+    }
+    .container .header h3{
+      display: none;
+    }
+    .container .actions {
+        color: rgba(255, 255, 255, 0.726);
+        padding: 15px;
+        background-color:  rgb(78,52,74);
+        border-radius: 15px;
+        display: flex;
+        margin: auto;
+        margin-right: 5%;
+    }
+    .container{
+        overflow: hidden;
+    }
+    .container .actions h1{
+        color: white;
+        text-align: center;
+        font-size: 15px;
+    }
+    .container .actions:hover{
+        color: #fff;
+        background-color:rgb(29,28,48) ;
+        transition: all 0.5s;
+        border:10px solid rgb(78,52,74);
+    }
+    .container .logo {
+        color: #222;
+        margin-left: 20px;
+        object-fit: cover;
+    }
+    .content{
+        background-color: rgb(29,28,48);
+        background-image: url(images/bg3.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size:contain;
+        overflow: hidden;
+       }
+       .bg3{
+        z-index: 3000;
+        padding-top: 200px;
+        float: right;
+        overflow: hidden;
+       }
+       .baslik{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: inline-block;
+
+       }
+       .baslik h1{
+        z-index: 1000;
+        padding: 15px;
+        margin-top: 50px;
+        color: white;
+        display: block;
+       }
+       .btns{
+        display: flex;
+        padding: 25px;
+        text-align: center;
+       }
+       .btn1 , .btn2{
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.726);
+        padding: 10px;
+        border-radius: 15px;
+        transform: scale(1);
+        transition: all 1s;
+       }
+       .btn1:hover , .btn2:hover{
+        background-color: rgb(29,28,48);
+        color: #fff;
+        border: #fff solid 1px;
+        transform: scale(1.5);
+        transition: all 1s;
+       }
+       a:link{
+        color: #fff;
+       }
+       a:visited{
+        color: rgb(29,28,48);
+       }
+       a:visited:hover{
+        color: #fff;
+       }
+       a:hover{
+        color: #fff;
+       }
+       a:active{
+        color: rgb(111, 0, 255);
+       }
+.btn1{
+    display: none;
+}
+       .ozellik{
+        text-align: center;
+        display: block;
+       }
+       .ozellik img{
+        width: 378px;
+        height: 304px; 
+       }
+       .ozellik{
+        position: absolute;
+        width: 100%;
+       }
+       .ozellik2{
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+       }
+       .ozellik h1{
+        padding: 5px;
+        color: #fff;
+       }
+       .ozellik p{
+        padding: 20px;
+        color: #fff;
+        font-size: 20px;
+       }
+       .btns2{
+        position: relative;
+        float: left;
+        display: flex;
+        margin: auto;
+        margin-left: 150px;
+       }
+       .btns2 .btn1{
+        font-size: 15px;
+        transform: scale(1.5);
+       }
+       .btns2 .btn1:hover{
+        transform: scale(2.2);
+       }
+       .karsilama{
+        margin: auto;
+        text-align: center;
+        display: block;
+       }
+       .karsilama img{
+        width: 378px;
+        height: 304px; 
+       }
+       .karsilama{
+        margin-top: 80vh;
+        position: absolute;
+        width: 100%;
+       }
+       .karsilama2{
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+       }
+       .karsilama h1{
+        padding: 15px;
+        color: #fff;
+       }
+       .karsilama p{
+        padding: 50px;
+        color: #fff;
+        font-size: 20px;
+       }
+       .btns3{
+        position: relative;
+        float: left;
+        display: flex;
+        margin: auto;
+        margin-top: 100px;
+        text-align: center;
+        margin-left: 150px;
+       }
+       .btns3 .btn1{
+        margin: auto;
+        transform: scale(1.5);
+       }
+       .btns3 .btn1:hover{
+        transform: scale(2.2);
+       }
+       .ntfc{
+        margin: auto;
+        text-align: center;
+        display: block;
+       }
+       .ntfc img{
+        width: 478px;
+        height: 317px; 
+       }
+       .ntfc{
+        margin-top: 150vh;
+        position: absolute;
+        width: 100%;
+       }
+       .ntfc2{
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+       }
+       .ntfc h1{
+        padding: 15px;
+        color: #fff;
+       }
+       .ntfc p{
+        padding: 50px;
+        color: #fff;
+        font-size: 20px;
+       }
+       .komutlar{
+        margin: auto;
+        text-align: center;
+        display: block;
+       }
+       .komutlar img{
+        width: 378px;
+        height: 304px; 
+       }
+       .komutlar{
+        margin-top: 220vh;
+        position: absolute;
+        width: 100%;
+       }
+       .komutlar2{
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+       }
+       .komutlar h1{
+        padding: 5px;
+        color: #fff;
+       }
+       .komutlar p{
+        padding: 10px;
+        color: #fff;
+        font-size: 20px;
+       }
+       footer{
+        z-index: 1000;
+        background-color: rgb(29, 28, 48);
+        border-top: 1px solid rgb(78,52,74);
+        position: absolute;
+        display: block;
+        width: 100%;
+        margin-top: 280vh;
+        text-align: center;
+       }
+       footer .btns4{
+        padding: 15px;
+        display: flex;
+       }
+       .btn3 ,.btn4{
+        padding: 10px;
+        border-radius: 15px;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.726);
+       }
+       footer h1{
+        padding: 15px;
+        color: white;
+        font-size: 20px;
+       }
+    
+    /**
+        Hamburger menu kodları
+    **/
+    .hamburger-menu {
+        --height: 2.4px;
+        --space: calc(var(--height) * 2.5);
+        --animation-speed: 300ms;
+        width: calc(var(--space) * 4);
+        height: calc(var(--height) + (var(--space) * 2));
+        display: block;
+        cursor: pointer;
+        position: relative;
+        z-index: 5;
+    }
+    .hamburger-menu span,
+    .hamburger-menu span::before,
+    .hamburger-menu span::after {
+        content: '';
+        display: block;
+        height: var(--height);
+        width: 100%;
+        background: #ffffff;
+    }
+    .hamburger-menu span {
+        transform: translateY(var(--space));
+        transition: var(--animation-speed) var(--animation-speed) background-color;
+    }
+    .hamburger-menu span::before {
+        position: absolute;
+        bottom: var(--space);
+        transition: var(--animation-speed) transform, var(--animation-speed) var(--animation-speed) bottom;
+    }
+    .hamburger-menu span::after {
+        position: absolute;
+        top: var(--space);
+        transition: var(--animation-speed) transform, var(--animation-speed) var(--animation-speed) top;
+    }
+    
+    #navbar-toggle {
+        display: none;
+    }
+    #navbar-toggle:checked ~ nav.navbar {
+        transform: translateX(0);
+    }
+    #navbar-toggle:checked ~ .container {
+        transform: translateX(300px);
+    }
+    #navbar-toggle:checked ~ .container .backdrop {
+        opacity: 1;
+        visibility: visible;
+    }
+    #navbar-toggle:checked ~ .container .hamburger-menu span {
+        background: transparent;
+        transition: var(--animation-speed) background-color;
+    }
+    #navbar-toggle:checked ~ .container .hamburger-menu span::before {
+        transform: rotate(-45deg);
+        bottom: 0;
+        background-color: #fff;
+        transition: var(--animation-speed) var(--animation-speed) transform, var(--animation-speed) bottom;
+    }
+    #navbar-toggle:checked ~ .container .hamburger-menu span::after {
+        transform: rotate(45deg);
+        top: 0;
+        background-color: #fff;
+        transition: var(--animation-speed) var(--animation-speed) transform, var(--animation-speed) top;
+    }
+    .bg2 , .bg1{
+        display: none;
+    }
+    /* 
+    ##Cihaz = En Çok Tercih Edilen Mobil Boyutlar (Portrait/Dikey Modda)
+  */
+  } 
+ 

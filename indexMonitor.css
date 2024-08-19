@@ -1,0 +1,689 @@
+@media (min-width: 1591px) {
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        border: 0;
+        box-sizing: border-box;
+        outline: 0;
+        text-decoration: none;
+        font-family: 'Mulish', sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+    html,body{
+        scroll-behavior: smooth;
+        background: linear-gradient(rgb(29,28,48), rgb(29,28,48) );
+    }
+       .container{
+        height: 100vh;
+       }
+       .header{
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        /* background-image: linear-gradient(to right,red, rgb(21, 21, 197)  , purple); */
+        background-color: rgb(29,28,48);
+        
+      }
+      .header img{
+        float: left;
+        padding: 10px;
+        margin-left: 50px;
+      }
+      .headerLogo a h3{
+        color: rgba(255, 255, 255, 0.726);
+        padding: 10px;
+        margin-right: 50px;
+        margin-top: 25px;
+        background-color:  rgb(78,52,74);
+        border-radius: 15px;
+        display: flex;
+        float: right;
+      }
+      .headerLogo a h3:hover{
+        color: #fff;
+        background-color:rgb(29,28,48) ;
+        transition: all 0.5s;
+        border:10px solid rgb(78,52,74);
+
+      }
+      .headerLogo a h3:active{
+        color: #fff;
+        background-color:rgb(29,28,48) ;
+        transition: all 0.5s;
+        border:10px solid rgb(78,52,74);
+      }
+        .navbar ul{
+        font-size: 25px;
+        text-align: center;
+        list-style-type: none;
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+        overflow:hidden;
+        display: flex;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgb(78,52,74);
+       }
+       .navbar ul li{
+        width: 100%;
+       }
+       .navbar ul li a{
+        display: block;
+        padding: 14px;
+        background-color: rgb(29,28,48);
+        color: white;
+        text-decoration: none;
+       }
+       .navbar ul li a:hover{
+        background-color:rgb(78,52,74); 
+        transition: all 0.5s;
+        border-radius: 50%;
+       }
+       .content{
+        background-color: rgb(29,28,48);
+        background-image: url(images/bg1.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size:contain;
+        overflow: hidden;
+       }
+       .bg1{
+        z-index: 3000;
+        margin-top: 40vh;
+        padding-top: 25px;
+        float: right;
+        overflow: hidden;
+        display: flex;
+       }
+       .baslik{
+        text-align: start;
+        display: inline-block;
+        margin-left: 100px;
+
+       }
+       .baslik h1{
+        z-index: 1000;
+        padding: 15px;
+        margin-top: 250px;
+        color: white;
+        display: block;
+       }
+       .btns{
+        position: relative;
+        float: left;
+        display: flex;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+       }
+       .btn1{
+        cursor: pointer;
+        margin-left: 180px;
+        background-color: rgba(255, 255, 255, 0.726);
+        padding: 10px;
+        border-radius: 15px;
+        transform: scale(1);
+        transition: all 1s;
+       }
+       .btn2{
+        cursor: pointer;
+        margin-left: 100px;
+        background-color: rgba(255, 255, 255, 0.726);
+        padding: 10px;
+        border-radius: 15px;
+        transform: scale(1);
+        transition: all 1s;
+       }
+       .btn1:hover , .btn2:hover{
+        background-color: rgb(29,28,48);
+        color: #fff;
+        border: #fff solid 1px;
+        transform: scale(1.5);
+        transition: all 1s;
+       }
+       a:link{
+        color: #fff;
+       }
+       a:visited{
+        color: rgb(29,28,48);
+       }
+       a:visited:hover{
+        color: #fff;
+       }
+       a:hover{
+        color: #fff;
+       }
+       a:active{
+        color: rgb(111, 0, 255);
+       }
+       #content2{
+        border-top: 1px solid rgb(78,52,74) ;
+       }
+       .content2{
+        margin-top: 20vh;
+        height: 100%;
+       }
+       .ozellik img{
+        float: right;
+        margin-right: 100px;
+        width: 756px;
+        height: 608px; 
+       }
+       .ozellik{
+        position: absolute;
+        width: 100%;
+       }
+       .ozellik h1{
+        padding: 15px;
+        color: #fff;
+        margin-left: 100px;
+       }
+       .ozellik p{
+        color: #fff;
+        font-size: 20px;
+        margin-left: 100px;
+        width: 40%;
+       }
+       .btns2{
+        position: relative;
+        float: left;
+        display: flex;
+        margin: auto;
+        margin-top: 100px;
+        text-align: center;
+        margin-left: 150px;
+       }
+       .btns2 .btn1{
+        transform: scale(1.5);
+       }
+       .btns2 .btn1:hover{
+        transform: scale(2.2);
+       }
+       .karsilama{
+        position: absolute;
+        display: block;
+        width: 100%;
+        margin-top: 80vh;
+        padding: 25px;
+       }
+       .karsilama img{
+        margin-right: 100px;
+        float: left;
+        margin-left: 100px;
+        width: 561px;
+        height: 404px;
+       }
+       .karsilama2 h1{
+        padding: 15px;
+        color: #fff;
+       }
+       .karsilama2 p{
+        color: #fff;
+        font-size: 20px;
+        margin-right: 100px;
+       }
+       .btns3{
+        position: relative;
+        display: flex;
+        margin: auto;
+        margin-top: 100px;
+        text-align: center;
+       }
+       .btns3 .btn1{
+        margin: auto;
+        transform: scale(1.5);
+       }
+       .btns3 .btn1:hover{
+        transform: scale(2.2);
+       }
+       .ntfc{
+        position: absolute;
+        display: block;
+        width: 100%;
+        margin-top: 140vh;
+        padding: 25px;
+       }
+       .ntfc img{
+        float: right;
+        margin-right: 100px;
+        width: 717px;
+        height: 476px;
+       }
+       .ntfc2 h1{
+        padding: 15px;
+        color: #fff;
+        margin-left: 100px;
+       }
+       .ntfc2 p{
+        color: #fff;
+        font-size: 20px;
+        margin-left: 100px;
+        width: 40%;
+       }
+       .komutlar{
+        position: absolute;
+        display: block;
+        width: 100%;
+        margin-top: 200vh;
+        padding: 25px;
+       }
+       .komutlar img{
+        float: left;
+        margin-left: 100px;
+        width: 561px;
+        height: 404px;
+        margin-right: 100px;
+        margin-top: 100px;
+       }
+       .komutlar2 h1{
+        color:#fff;
+        padding: 15px;
+        margin-right: 100px;
+        margin-top: 100px;
+       }
+       .komutlar2 p{
+        color: #fff;
+        font-size: 20px;
+        margin-right: 100px;
+       }
+       footer{
+        border-top: 1px solid rgb(78,52,74);
+        position: absolute;
+        display: block;
+        width: 100%;
+        margin-top: 170vh;
+        text-align: center;
+       }
+       footer .btns4{
+        padding: 15px;
+        display: flex;
+       }
+       .btn3 ,.btn4{
+        padding: 10px;
+        border-radius: 15px;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.726);
+       }
+       .btn3:hover{
+        border: 1px solid rgba(255, 255, 255, 0.726); 
+        background-color: rgb(29,28,48);
+        transition: all 1s;
+       }
+       .btn4:hover{
+        border: 1px solid rgba(255, 255, 255, 0.726); 
+        background-color: rgb(29,28,48);
+        transition: all 1s;
+       }
+       footer h1{
+        padding: 15px;
+        color: white;
+        font-size: 20px;
+       }
+       .navbar-toggle{
+        display: none;
+       }
+       .hamburger-menu{
+        display: none;
+       }
+       .logo{
+        display: none;
+       }
+       .actions{
+        display: none;
+       }
+       .backdrop{
+        display: none;
+       }
+       #navbar-toggle{
+        display: none;
+       }
+       .bg2 , .bg3{
+        display: none;
+    }
+       
+       /* 
+    ##Cihaz = Laptoplar, Masaüstü
+  */
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1590px) {
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        border: 0;
+        box-sizing: border-box;
+        outline: 0;
+        text-decoration: none;
+        font-family: 'Mulish', sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+    html, body{
+        background: linear-gradient(rgb(29,28,48), rgb(29,28,48) );
+        scroll-behavior: smooth !important;
+    }
+       .container{
+        height: 100vh;
+       }
+       .header{
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        /* background-image: linear-gradient(to right,red, rgb(21, 21, 197)  , purple); */
+        background-color: rgb(29,28,48);
+        
+      }
+      .header img{
+        float: left;
+        padding: 10px;
+        margin-left: 50px;
+      }
+      .headerLogo a h3{
+        color: rgba(255, 255, 255, 0.726);
+        padding: 10px;
+        margin-right: 50px;
+        margin-top: 25px;
+        background-color:  rgb(78,52,74);
+        border-radius: 15px;
+        display: flex;
+        float: right;
+      }
+      .headerLogo a h3:hover{
+        color: #fff;
+        background-color:rgb(29,28,48) ;
+        transition: all 0.5s;
+        border:10px solid rgb(78,52,74);
+
+      }
+      .headerLogo a h3:active{
+        color: #fff;
+        background-color:rgb(29,28,48) ;
+        transition: all 0.5s;
+        border:10px solid rgb(78,52,74);
+      }
+        .navbar ul{
+        font-size: 25px;
+        text-align: center;
+        list-style-type: none;
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+        overflow:hidden;
+        display: flex;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgb(78,52,74);
+       }
+       .navbar ul li{
+        width: 100%;
+       }
+       .navbar ul li a{
+        display: block;
+        padding: 14px;
+        background-color: rgb(29,28,48);
+        color: white;
+        text-decoration: none;
+       }
+       .navbar ul li a:hover{
+        background-color:rgb(78,52,74); 
+        transition: all 0.5s;
+        border-radius: 50%;
+       }
+       .content{
+        background-color: rgb(29,28,48);
+        background-image: url(images/bg1.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size:contain;
+        overflow: hidden;
+       }
+       .bg1{
+        z-index: 3000;
+        padding-top: 25px;
+        float: right;
+        overflow: hidden;
+        display: flex;
+       }
+       .baslik{
+        text-align: start;
+        display: inline-block;
+        margin-left: 100px;
+
+       }
+       .baslik h1{
+        z-index: 1000;
+        padding: 15px;
+        margin-top: 250px;
+        color: white;
+        display: block;
+       }
+       .btns{
+        position: relative;
+        float: left;
+        display: flex;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+       }
+       .btn1{
+        cursor: pointer;
+        margin-left: auto;
+        background-color: rgba(255, 255, 255, 0.726);
+        padding: 10px;
+        border-radius: 15px;
+        transform: scale(1);
+        transition: all 1s;
+       }
+       .btn2{
+        cursor: pointer;
+        margin-left: 100px;
+        background-color: rgba(255, 255, 255, 0.726);
+        padding: 10px;
+        border-radius: 15px;
+        transform: scale(1);
+        transition: all 1s;
+       }
+       .btn1:hover , .btn2:hover{
+        background-color: rgb(29,28,48);
+        color: #fff;
+        border: #fff solid 1px;
+        transform: scale(1.5);
+        transition: all 1s;
+       }
+       a:link{
+        color: #fff;
+       }
+       a:visited{
+        color: rgb(29,28,48);
+       }
+       a:visited:hover{
+        color: #fff;
+       }
+       a:hover{
+        color: #fff;
+       }
+       a:active{
+        color: rgb(111, 0, 255);
+       }
+       #content2{
+        border-top: 1px solid rgb(78,52,74) ;
+       }
+       .content2{
+        margin-top: 20vh;
+        height: 100%;
+       }
+       .ozellik img{
+        float: right;
+        margin-right: 100px;
+        width: 756px;
+        height: 608px; 
+       }
+       .ozellik{
+        position: absolute;
+        width: 100%;
+       }
+       .ozellik h1{
+        padding: 15px;
+        color: #fff;
+        margin-left: 100px;
+       }
+       .ozellik p{
+        color: #fff;
+        font-size: 20px;
+        margin-left: 100px;
+        width: 40%;
+       }
+       .btns2{
+        position: relative;
+        float: left;
+        display: flex;
+        margin: auto;
+        margin-top: 100px;
+        text-align: center;
+        margin-left: 150px;
+       }
+       .btns2 .btn1{
+        transform: scale(1.5);
+       }
+       .btns2 .btn1:hover{
+        transform: scale(2.2);
+       }
+       .karsilama{
+        position: absolute;
+        display: block;
+        width: 100%;
+        margin-top: 80vh;
+        padding: 25px;
+       }
+       .karsilama img{
+        margin-right: 100px;
+        float: left;
+        margin-left: 100px;
+        width: 561px;
+        height: 404px;
+       }
+       .karsilama2 h1{
+        padding: 15px;
+        color: #fff;
+       }
+       .karsilama2 p{
+        color: #fff;
+        font-size: 20px;
+        margin-right: 100px;
+       }
+       .btns3{
+        position: relative;
+        display: flex;
+        margin: auto;
+        margin-top: 100px;
+        text-align: center;
+       }
+       .btns3 .btn1{
+        margin: auto;
+        transform: scale(1.5);
+       }
+       .btns3 .btn1:hover{
+        transform: scale(2.2);
+       }
+       .ntfc{
+        position: absolute;
+        display: block;
+        width: 100%;
+        margin-top: 140vh;
+        padding: 25px;
+       }
+       .ntfc img{
+        float: right;
+        margin-right: 100px;
+        width: 717px;
+        height: 476px;
+       }
+       .ntfc2 h1{
+        padding: 15px;
+        color: #fff;
+        margin-left: 100px;
+       }
+       .ntfc2 p{
+        color: #fff;
+        font-size: 20px;
+        margin-left: 100px;
+        width: 40%;
+       }
+       .komutlar{
+        position: absolute;
+        display: block;
+        width: 100%;
+        margin-top: 200vh;
+        padding: 25px;
+       }
+       .komutlar img{
+        float: left;
+        margin-left: 100px;
+        width: 561px;
+        height: 404px;
+        margin-right: 100px;
+        margin-top: 100px;
+       }
+       .komutlar2 h1{
+        color:#fff;
+        padding: 15px;
+        margin-right: 100px;
+        margin-top: 100px;
+       }
+       .komutlar2 p{
+        color: #fff;
+        font-size: 20px;
+        margin-right: 100px;
+       }
+       footer{
+        border-top: 1px solid rgb(78,52,74);
+        position: absolute;
+        display: block;
+        width: 100%;
+        margin-top: 170vh;
+        text-align: center;
+       }
+       footer .btns4{
+        padding: 15px;
+        display: flex;
+       }
+       .btn3 ,.btn4{
+        padding: 10px;
+        border-radius: 15px;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.726);
+       }
+       footer h1{
+        padding: 15px;
+        color: white;
+        font-size: 20px;
+       }
+       .navbar-toggle{
+        display: none;
+       }
+       .hamburger-menu{
+        display: none;
+       }
+       .logo{
+        display: none;
+       }
+       .actions{
+        display: none;
+       }
+       .backdrop{
+        display: none;
+       }
+       #navbar-toggle{
+        display: none;
+       }
+       .bg2 , .bg3{
+        display: none;
+    }    
+       /* 
+    ##Cihaz = Laptoplar, Masaüstü
+  */
+  }

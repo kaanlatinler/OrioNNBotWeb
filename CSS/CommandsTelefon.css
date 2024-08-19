@@ -1,0 +1,297 @@
+@media (min-width: 144px) and (max-width: 480px) {
+    
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        border: 0;
+        box-sizing: border-box;
+        outline: 0;
+        text-decoration: none;
+        font-family: 'Mulish', sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+    .headerLogo{
+        display: none;
+    }
+    
+    :root {
+        --animation-speed: 300ms;
+    }
+    
+    html, body {
+        height: 100%;
+        background: rgb(29,28,48);
+        scroll-behavior: smooth;
+    }
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--animation-speed) all;
+        cursor: pointer;
+    }
+    
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        background: rgb(29, 28, 48);
+        border-right: 1px solid #ddd;
+        transform: translateX(-100%);
+        transition: var(--animation-speed) transform;
+    }
+    .navbar ul li {
+        border-bottom: 1px solid #ddd;
+    }
+    .navbar ul li a {
+        display: block;
+        font-size: 20px;
+        letter-spacing: 2px;
+        padding: 15px 20px;
+        color: white;
+    }
+    .navbar ul li a:hover {
+        background-color: white;
+        color: rgb(29, 28, 48);
+        transition: all 1s;
+    }
+    
+    .container {
+        height: 100%;
+        background: linear-gradient(rgb(29,28,48), rgb(78,52,74) );
+        transition: var(--animation-speed) transform;
+    }
+    .container .header {
+        height: 100px;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(rgb(29,28,48));
+        padding: 0 20px;
+    }
+    .container .header h3{
+      display: none;
+    }
+    .container .actions {
+        color: rgba(255, 255, 255, 0.726);
+        padding: 15px;
+        background-color:  rgb(78,52,74);
+        border-radius: 15px;
+        display: flex;
+        margin: auto;
+        margin-right: 5%;
+    }
+    .container{
+        overflow:scroll;
+    }
+    .container .actions h1{
+        color: white;
+        text-align: center;
+        font-size: 15px;
+    }
+    .container .actions:hover{
+        color: #fff;
+        background-color:rgb(29,28,48) ;
+        transition: all 0.5s;
+        border:10px solid rgb(78,52,74);
+    }
+    .container .logo {
+        color: #222;
+        margin-left: 20px;
+        object-fit: cover;
+    }
+    .content{
+         background-color: rgb(29,28,48);
+         background-image: url(../images/bg3.svg);
+         background-repeat: no-repeat;
+         background-position: bottom;
+         background-size:contain;
+        }
+       .bg3{
+        z-index: 5000;
+        float: right;
+        display: flex;
+        overflow: hidden;
+       }
+       .baslik{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: inline-block;
+       }
+       .commands ul{
+        padding-top: 10px;
+       }
+       .commands ul li{
+        margin-left: 50px;
+        text-align: left;
+        list-style: circle;
+        color: #fff;
+        padding: 15px;
+       }
+       .commands ul li h1{
+        letter-spacing: 5px;
+       }
+    .baslik > h1{
+     z-index: 1000;
+     padding: 15px;
+     margin-top: 50px;
+     color: white;
+     display: block;
+     overflow: hidden;
+    }
+       .btns{
+        display: flex;
+        padding: 25px;
+        text-align: center;
+       }
+       .btn1 , .btn2{
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.726);
+        padding: 10px;
+        border-radius: 15px;
+        transform: scale(1);
+        transition: all 1s;
+       }
+       .btn1:hover , .btn2:hover{
+        background-color: rgb(29,28,48);
+        color: #fff;
+        border: #fff solid 1px;
+        transform: scale(1.5);
+        transition: all 1s;
+       }
+       a:link{
+        color: #fff;
+       }
+       a:visited{
+        color: rgb(29,28,48);
+       }
+       a:visited:hover{
+        color: #fff;
+       }
+       a:hover{
+        color: #fff;
+       }
+       a:active{
+        color: rgb(111, 0, 255);
+       }
+.btn1{
+    display: none;
+}
+       footer{
+        bottom: 0;
+        position: absolute;
+        display: block;
+        width: 100%;
+        text-align: center;
+        z-index: 5000;
+       }
+       footer .btns4{
+        padding: 15px;
+        display: flex;
+       }
+       footer h1{
+        padding: 15px;
+        color: white;
+        font-size: 15px;
+       }
+       .btn3 ,.btn4{
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 15px;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.726);
+       }
+       .btn3:hover{
+        border: 1px solid rgba(255, 255, 255, 0.726); 
+        background-color: rgb(29,28,48);
+        transition: all 1s;
+       }
+       .btn4:hover{
+        border: 1px solid rgba(255, 255, 255, 0.726); 
+        background-color: rgb(29,28,48);
+        transition: all 1s;
+       }
+    /**
+        Hamburger menu kodları
+    **/
+    .hamburger-menu {
+        --height: 2.4px;
+        --space: calc(var(--height) * 2.5);
+        --animation-speed: 300ms;
+        width: calc(var(--space) * 4);
+        height: calc(var(--height) + (var(--space) * 2));
+        display: block;
+        cursor: pointer;
+        position: relative;
+        z-index: 5;
+    }
+    .hamburger-menu span,
+    .hamburger-menu span::before,
+    .hamburger-menu span::after {
+        content: '';
+        display: block;
+        height: var(--height);
+        width: 100%;
+        background: #ffffff;
+    }
+    .hamburger-menu span {
+        transform: translateY(var(--space));
+        transition: var(--animation-speed) var(--animation-speed) background-color;
+    }
+    .hamburger-menu span::before {
+        position: absolute;
+        bottom: var(--space);
+        transition: var(--animation-speed) transform, var(--animation-speed) var(--animation-speed) bottom;
+    }
+    .hamburger-menu span::after {
+        position: absolute;
+        top: var(--space);
+        transition: var(--animation-speed) transform, var(--animation-speed) var(--animation-speed) top;
+    }
+    
+    #navbar-toggle {
+        display: none;
+    }
+    #navbar-toggle:checked ~ nav.navbar {
+        transform: translateX(0);
+    }
+    #navbar-toggle:checked ~ .container {
+        transform: translateX(300px);
+    }
+    #navbar-toggle:checked ~ .container .backdrop {
+        opacity: 1;
+        visibility: visible;
+    }
+    #navbar-toggle:checked ~ .container .hamburger-menu span {
+        background: transparent;
+        transition: var(--animation-speed) background-color;
+    }
+    #navbar-toggle:checked ~ .container .hamburger-menu span::before {
+        transform: rotate(-45deg);
+        bottom: 0;
+        background-color: #fff;
+        transition: var(--animation-speed) var(--animation-speed) transform, var(--animation-speed) bottom;
+    }
+    #navbar-toggle:checked ~ .container .hamburger-menu span::after {
+        transform: rotate(45deg);
+        top: 0;
+        background-color: #fff;
+        transition: var(--animation-speed) var(--animation-speed) transform, var(--animation-speed) top;
+    }
+    .bg2 , .bg1{
+        display: none;
+    }
+    /* 
+    ##Cihaz = En Çok Tercih Edilen Mobil Boyutlar (Portrait/Dikey Modda)
+  */
+  } 
+ 
