@@ -186,6 +186,19 @@
         ScrollReveal().reveal(".ntfc", { delay: 1500 });
         ScrollReveal().reveal(".komutlar", { delay: 2000 });
     </script>
+
+<script>
+    setInterval(() => {
+        fetch('https://driversbot.onrender.com/message')
+            .then(response => response.json())
+            .then(data => {
+                console.log('Mesaj:', data);
+            })
+            .catch(error => {
+                console.error('Bir hata oluştu:', error);
+            });
+    }, 600000);
+</script>
 </body>
 
 </html>
